@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0 flex items-center" onClick={closeMobileMenu}>
                 <span className={`text-2xl font-bold transition-colors duration-300 ${
-                  isScrolled ? 'text-primary-600' : 'text-white'
+                  isScrolled ? 'text-blue-500' : 'text-white'
                 }`}>
                   AMZ
                 </span>
@@ -54,8 +54,8 @@ const Navbar: React.FC = () => {
                 to="/"
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/') 
-                    ? (isScrolled ? 'text-primary-600' : 'text-white') 
-                    : (isScrolled ? 'text-gray-600 hover:text-primary-600' : 'text-white/80 hover:text-white')
+                    ? (isScrolled ? 'text-blue-500' : 'text-white') 
+                    : (isScrolled ? 'text-gray-600 hover:text-blue-500' : 'text-white/80 hover:text-white')
                 }`}
               >
                 Home
@@ -64,8 +64,8 @@ const Navbar: React.FC = () => {
                 to="/about"
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/about') 
-                    ? (isScrolled ? 'text-primary-600' : 'text-white') 
-                    : (isScrolled ? 'text-gray-600 hover:text-primary-600' : 'text-white/80 hover:text-white')
+                    ? (isScrolled ? 'text-blue-500' : 'text-white') 
+                    : (isScrolled ? 'text-gray-600 hover:text-blue-500' : 'text-white/80 hover:text-white')
                 }`}
               >
                 About
@@ -74,8 +74,8 @@ const Navbar: React.FC = () => {
                 to="/contact"
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/contact') 
-                    ? (isScrolled ? 'text-primary-600' : 'text-white') 
-                    : (isScrolled ? 'text-gray-600 hover:text-primary-600' : 'text-white/80 hover:text-white')
+                    ? (isScrolled ? 'text-blue-500' : 'text-white') 
+                    : (isScrolled ? 'text-gray-600 hover:text-blue-500' : 'text-white/80 hover:text-white')
                 }`}
               >
                 Contact
@@ -84,8 +84,8 @@ const Navbar: React.FC = () => {
                 to="/dashboard"
                 className={`font-medium transition-colors duration-200 ${
                   isActive('/dashboard') 
-                    ? (isScrolled ? 'text-primary-600' : 'text-white') 
-                    : (isScrolled ? 'text-gray-600 hover:text-primary-600' : 'text-white/80 hover:text-white')
+                    ? (isScrolled ? 'text-blue-500' : 'text-white') 
+                    : (isScrolled ? 'text-gray-600 hover:text-blue-500' : 'text-white/80 hover:text-white')
                 }`}
               >
                 Dashboard
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
               {/* Get Quote Button */}
               <button className={`px-6 py-2 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
                 isScrolled
-                  ? 'bg-primary-600 text-white hover:bg-primary-700 shadow-lg hover:shadow-xl'
+                  ? 'bg-blue-500 text-white hover:bg-primary-700 shadow-lg hover:shadow-xl'
                   : 'bg-white text-primary-600 hover:bg-gray-50 shadow-lg hover:shadow-xl'
               }`}>
                 Get Quote
