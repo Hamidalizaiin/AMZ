@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  FaChartLine, 
-  FaSearch, 
-  FaEdit, 
-  FaChartBar, 
-  FaRocket, 
-  FaComments,
-  FaArrowRight,
+import {
+
+  FaRocket,
+   FaArrowRight,
   FaPlay,
   FaCheckCircle,
   FaDollarSign,
@@ -14,21 +10,16 @@ import {
 } from 'react-icons/fa';
 import CountUp from '../../../components/CountUp';
 
-interface Feature {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
-
+ 
 const HeroSection: React.FC = () => {
-   const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
-  
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
- 
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
@@ -38,7 +29,7 @@ const HeroSection: React.FC = () => {
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
         }}></div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 relative z-10">
         {/* Hero Section */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -59,7 +50,7 @@ const HeroSection: React.FC = () => {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            From product research to PPC optimization, we provide end-to-end Amazon services 
+            From product research to PPC optimization, we provide end-to-end Amazon services
             that drive sales, increase rankings, and maximize your profits.
           </p>
 
@@ -84,8 +75,8 @@ const HeroSection: React.FC = () => {
             <div className="text-center group">
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors duration-300">
                 <FaDollarSign className="inline w-8 h-8 sm:w-10 sm:h-10 mr-2" />
-                <CountUp 
-                  end={50000} 
+                <CountUp
+                  end={50000}
                   duration={2500}
                   prefix=""
                   suffix="+"
@@ -97,8 +88,8 @@ const HeroSection: React.FC = () => {
             <div className="text-center group">
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors duration-300">
                 <FaRocket className="inline w-8 h-8 sm:w-10 sm:h-10 mr-2" />
-                <CountUp 
-                  end={500} 
+                <CountUp
+                  end={500}
                   duration={2000}
                   suffix="+"
                   className="inline"
@@ -109,8 +100,8 @@ const HeroSection: React.FC = () => {
             <div className="text-center group">
               <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors duration-300">
                 <FaTrophy className="inline w-8 h-8 sm:w-10 sm:h-10 mr-2" />
-                <CountUp 
-                  end={98} 
+                <CountUp
+                  end={98}
                   duration={1800}
                   suffix="%"
                   className="inline"
@@ -122,7 +113,7 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Features Grid */}
-      
+
       </div>
     </div>
   );

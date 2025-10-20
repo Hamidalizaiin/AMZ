@@ -10,8 +10,7 @@ import {
 const AboutUs: React.FC = () => {
  const [isVisible, setIsVisible] = useState<boolean>(false);
    const sectionRef = useRef<HTMLElement>(null);
-  const boxRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const imageRef = useRef<HTMLDivElement>(null);
+   const imageRef = useRef<HTMLDivElement>(null);
 
   // Intersection Observer for animations
   useEffect(() => {
