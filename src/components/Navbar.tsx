@@ -160,20 +160,7 @@ const Navbar: React.FC = () => {
                 Contact
               </Link>
 
-              <Link
-                to="/dashboard"
-                className={`font-medium transition-colors duration-200 ${
-                  isActive("/dashboard")
-                    ? isScrolled
-                      ? "text-blue-600"
-                      : "text-white"
-                    : isScrolled
-                    ? "text-gray-600 hover:text-blue-600"
-                    : "text-white/80 hover:text-white"
-                }`}
-              >
-                Dashboard
-              </Link>
+               
             </div>
 
             {/* Desktop Buttons */}
