@@ -6,6 +6,7 @@ import OurValues from './components/OurValues'
 import Testimonials from './components/Testimonials'
 import WhyChooseUs from './components/WhyChooseUs'
 import { FAQSection } from './components/FAQ'
+import ProofOfWork from './components/ProofOfWork'
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
       <OurProcess />
       <OurValues />
       <Testimonials />
+      <ProofOfWork />
       <WhyChooseUs />
       <FAQSection />
     </>
